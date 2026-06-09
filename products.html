@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Core — Технологии, которые работают на вас</title>
+    <meta name="description"
+        content="Эргономичная экосистема для дома и бизнеса. AI, IoT и кибербезопасность от Nebula Core.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__brand">
+                <h1 class="header__logo">Nebula Core</h1>
+                <p class="header__tagline">Минимум сложности, максимум возможностей.</p>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">О компании</a></li>
+                    <li class="nav__item"><a href="./products.html" class="nav__link">Наши продукты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="products" class="section products">
+            <div class="container">
+                <h2 class="section__title">Наши продукты</h2>
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__header">
+                            <h3 class="product-card__title">«Орион-Про»</h3>
+                            <span class="product-card__subtitle">(Умная колонка с нейросетью)</span>
+                        </div>
+                        <span class="product-card__category">Умный дом / Аудио</span>
+                        <p class="product-card__desc">Компактная колонка с локальным AI-модулем, который работает даже
+                            без интернета. Распознает 6 голосов в комнате и управляет всеми устройствами Nebula Core.
+                        </p>
+                        <h4 class="product-card__subheader">Характеристики:</h4>
+                        <ul class="product-card__list">
+                            <li>Мощность звука: 20 Вт (360° обзор)</li>
+                            <li>Частота процессора AI: 1.8 ГГц</li>
+                            <li>Защита: Влагозащита IP54</li>
+                        </ul>
+                        <p class="product-card__price">11 990 ₽</p>
+                        <p class="product-card__status">✅ В наличии / 🚚 Доставка завтра</p>
+                        <button class="btn btn--primary product-action-btn" data-action="order"
+                            data-product="«Орион-Про»">Заказать</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__header">
+                            <h3 class="product-card__title">«DataCore Light»</h3>
+                            <span class="product-card__subtitle">(Облачный тариф для бизнеса)</span>
+                        </div>
+                        <span class="product-card__category">B2B / Облачные решения</span>
+                        <p class="product-card__desc">Тариф для автоматизации отдела продаж и клиентского сервиса.
+                            Включает анализ звонков, генерацию отчетов и предиктивную аналитику оттока клиентов.</p>
+                        <h4 class="product-card__subheader">В комплекте:</h4>
+                        <ul class="product-card__list">
+                            <li>До 5000 обращений в месяц</li>
+                            <li>API для интеграции с CRM</li>
+                            <li>Обучение 2-х сотрудников</li>
+                        </ul>
+                        <p class="product-card__price">29 900 ₽ / мес. <span class="price-note">(без НДС)</span></p>
+                        <p class="product-card__status">🎁 Пробный период 14 дней бесплатно</p>
+                        <button class="btn btn--accent product-action-btn" data-action="connect"
+                            data-product="«DataCore Light»">Подключить</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__header">
+                            <h3 class="product-card__title">«Nebula Link»</h3>
+                            <span class="product-card__subtitle">(Хаб-контроллер)</span>
+                        </div>
+                        <span class="product-card__category">Умный дом / Безопасность</span>
+                        <p class="product-card__desc">Центральный контроллер для объединения до 50 датчиков и устройств
+                            Zigbee + Wi-Fi. Обеспечивает сценарии (например: «Ушёл из дома» — выключает свет, закрывает
+                            шторы).</p>
+                        <h4 class="product-card__subheader">Характеристики:</h4>
+                        <ul class="product-card__list">
+                            <li>Память: 2 ГБ ОЗУ, 8 ГБ ПЗУ</li>
+                            <li>Порты: USB-C, Ethernet, резервный аккумулятор 2 ч.</li>
+                        </ul>
+                        <p class="product-card__price">4 499 ₽</p>
+                        <p class="product-card__status status--preorder">❌ Предзаказ (скоро поступление)</p>
+                        <button class="btn btn--outline product-action-btn" data-action="notify"
+                            data-product="«Nebula Link»">Уведомить о поступлении</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Nebula Core. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+        <span class="toast__icon">✅</span>
+        <span class="toast__message" id="toast-message"></span>
+        <button class="toast__close" aria-label="Закрыть">&times;</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
